@@ -5,8 +5,15 @@
     <link rel="stylesheet" type="text/css" href="http://extjs.cachefly.net/ext-4.0.2/resources/css/ext-all.css" />
     <script type="text/javascript" src="http://extjs.cachefly.net/ext-4.0.2/ext-all-debug.js"></script>
     <script>
+      //TODO: move that to a separate file
       Ext.onReady(function(){
         Ext.MessageBox.alert('test','Test Message is here');
+        new Ext.Panel({
+          width: 200,
+          height: 200,
+          renderTo: 'place-for-panel',
+          title: 'A panel'
+        });
       });
     </script>
   </head>
